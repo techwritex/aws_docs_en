@@ -1,55 +1,53 @@
 ---
-title: Создание роли
+title: Create a role
 sidebar: general_sidebar
 permalink: create-role.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по созданию роли для Amazon Redshift с помощью сервиса по управлению доступом (IAM). Обозначенная роль позволяет кластеру Amazon Redshift обращаться к сервису Amazon S3 для загрузки данных."
+summary: "This procedure describes how to create a role to allow an Amazon Redshift cluster to communicate with Amazon S3."
 ---
 
-1. Войдите в консоль управления **IAM** (если вышли из неё после выполнения предыдущего шага):
+1. Sign in to the [IAM console](https://console.aws.amazon.com/iam).
 
-    [https://console.aws.amazon.com/iam](https://console.aws.amazon.com/iam)
-
-2. В навигационной панели домашней страницы IAM перейдите в раздел **Roles** (Роли) и нажмите кнопку **Create role** (Создать роль):
+2. In the navigation pane, choose **Roles**, then **Create role**.
 
     {% include image.html file="iam/role/aws_iam_step_2.jpg" alt="Создание роли в IAM" caption="" %}
 
-3. Перейдите в группу **AWS service** и выберите **Redshift**:
+3. Choose **AWS service**, then **Redshift**.
 
     {% include image.html file="iam/role/aws_iam_step_3.jpg" alt="Настройки роли в IAM" caption="" %}
 
-4. В разделе **Select your use case** выберите пункт **Redshift - Customizable** и нажмите кнопку **Next: Permissions** для добавления полномочий:
+4. In the **Use case** section, select **Redshift - Customizable**, then choose **Next: Permissions**.
 
     {% include image.html file="iam/role/aws_iam_step_4.jpg" alt="Настройки роли в IAM" caption="" %}
 
-5. В поле поиска укажите название политики *AmazonS3ReadOnlyAccess* (для загрузки данных из S3), отметьте чекбокс выбранной политики, оставьте настройки разрешений (Set permissions boundary) по-умолчанию и нажмите кнопку **Next: Tags**:
+5. On the **Permissions** page, select checbox **AmazonS3ReadOnlyAccess**. then **Set permissions boundary**. Choose **Next: Tags**.
 
     {% include image.html file="iam/role/aws_iam_step_5.jpg" alt="Полномочия для загрузки данных из Amazon S3" caption="" %}
 
     {% include image.html file="iam/role/aws_iam_step_6.jpg" alt="Полномочия для загрузки данных из Amazon S3" caption="" %}
 
-6. Укажите необходимое количество тегов, которые состоят из ключей и значений. Например, ключ - environment (среда) и значение - development (разработка). Нажмите кнопку **Next: Review** (или же пропустите шаг добавления тегов, сразу нажмите кнопку **Next: Review**):
+6. On the **Tags** page, add tags as key-value pairs (for instance, key - `environment` and value - `development`). Choose **Next: Review**.
 
-    {% include note.html content="добавление тегов является необязательным действием. Однако, теги могут быть полезны во некоторых ситуациях. Например, с помощью них можно анализировать расходы денежных средств на используемые сервисы Amazon." %}
+    {% include note.html content="Tagging is the optional step. However, [tags can help to track and control access for users](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html)." %}
 
     {% include image.html file="iam/role/aws_iam_step_7.jpg" alt="Добавление тегов" caption="" %}
 
-7. На заключительной странице создания роли **Review** (Обзор) обязательно укажите имя роли, ознакомьтесь с настройками и нажмите кнопку **Create role** (Создать роль):
+7. Review new role's settings. For **Role name** specify the role name (required), for instance, `myFirstRedshiftRole` (text for **Role descrtiption** is optional). Choose **Create role**.
 
     {% include image.html file="iam/role/aws_iam_step_8.jpg" alt="Проверка настроек создаваемой роли" caption="" %}
 
-8. Роль для считывания данных из сервиса Amazon S3 создана и добавлена в список ролей в IAM:
+8. The role has been created and added to the IAM role list.
 
     {% include image.html file="iam/role/aws_iam_step_9.jpg" alt="Созданная роль в перечне ролей IAM" caption="" %}
 
-9. Перейдите в созданную роль и сохраните её код *ARN (Amazon Resource Name)*, который потребуется на шаге загрузки данных из корзины Amazon S3:
+9. Choose the new role, then copy and save **Role ARN** (needed in the next tutorial).
 
     {% include image.html file="iam/role/aws_iam_step_10.jpg" alt="Код ARN - Amazon Resource Name" caption="" %}
 
 <br />
-[Предыдущий шаг: создание пользователя](https://techwritex.ru/aws_docs/create-user.html)
+[Previous tutorial: Create a user](https://techwritex.ru/aws_docs_en/create-user.html)
 
 <br />
-[Следующий шаг: создание корзины S3](https://techwritex.ru/aws_docs/create-s3-bucket.html)
+[Next tutorial: Create an S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html)
 
 {% include links.html %}

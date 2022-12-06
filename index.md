@@ -16,7 +16,7 @@ To create tutorials for developers about Data Warehouse deployment on AWS infras
 1. Learn AWS documentation about Redshift, IAM, S3.
 2. Create a user and a role to work with an Amazon Redshift cluster.
 3. Create, configure and secure the cluster.
-4. Load sample data to the cluster and analyze the data.
+4. Load sample data from S3 to the cluster and analyze the data.
 5. Design a document as a static site.
 
 {% include links.html %}
