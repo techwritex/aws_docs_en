@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://localhost:4000/samplepost.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/myupdate.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/test-post-from-last-year.html</loc>
+  </url>
+  
+  
+
+
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/create-s3-bucket.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/create-cluster.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/create-role.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/create-user.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/delete-cluster.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/index.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/load-data-from-s3.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/run-queries.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/steps.html</loc>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</urlset>

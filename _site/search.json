@@ -1,0 +1,145 @@
+[
+
+
+
+
+{
+"title": "Создание корзины S3",
+"tags": "",
+"keywords": "",
+"url": "create-s3-bucket.html",
+"summary": "В разделе представлена последовательность шагов по созданию корзины (bucket) Amazon S3, которая будет использована в качестве источника для хранилища данных на Amazon Redshift."
+}
+,
+
+
+
+{
+"title": "Создание кластера",
+"tags": "",
+"keywords": "",
+"url": "create-cluster.html",
+"summary": "В разделе представлена последовательность шагов по созданию и настройке кластера Amazon Redshift."
+}
+,
+
+
+
+{
+"title": "Создание роли",
+"tags": "",
+"keywords": "",
+"url": "create-role.html",
+"summary": "В разделе представлена последовательность шагов по созданию роли для Amazon Redshift с помощью сервиса по управлению доступом (IAM). Обозначенная роль позволяет кластеру Amazon Redshift обращаться к сервису Amazon S3 для загрузки данных."
+}
+,
+
+
+
+{
+"title": "Создание пользователя",
+"tags": "",
+"keywords": "",
+"url": "create-user.html",
+"summary": "В разделе представлена последовательность шагов по созданию пользователя с полномочиями на чтение данных Amazon Redshift и выполению запросов с помощью встроенного редактора."
+}
+,
+
+
+
+{
+"title": "Удаление кластера",
+"tags": "",
+"keywords": "",
+"url": "delete-cluster.html",
+"summary": "В разделе представлена последовательность шагов по сохранению слепка и удалению кластера."
+}
+,
+
+
+
+{
+"title": "Развёртывание хранилища данных на AWS",
+"tags": "",
+"keywords": "",
+"url": "index.html",
+"summary": "Данное руководство основано на документации Amazon web services (AWS)."
+}
+,
+
+
+
+{
+"title": "Загрузка данных из Amazon S3",
+"tags": "",
+"keywords": "",
+"url": "load-data-from-s3.html",
+"summary": "В разделе представлена последовательность шагов по загрузке данных корзины Amazon S3."
+}
+,
+
+
+
+{
+"title": "Подключение к кластеру и выполнение запросов",
+"tags": "",
+"keywords": "",
+"url": "run-queries.html",
+"summary": "В разделе представлена последовательность шагов по соединению с кластером и выполнению sql-запросов с помощью встроенного редактора."
+}
+,
+
+
+
+{
+"title": "Шаги процесса по развёртыванию хранилища данных",
+"tags": "",
+"keywords": "",
+"url": "steps.html",
+"summary": ""
+}
+,
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "Sample post",
+"tags": "newsgetting_started",
+"keywords": "",
+"url": "samplepost.html",
+"summary": "This is some summary frontmatter for my sample post."
+}
+,
+
+
+{
+"title": "Welcome to Jekyll!",
+"tags": "news",
+"keywords": "",
+"url": "myupdate.html",
+"summary": ""
+}
+,
+
+
+{
+"title": "Test post from last year",
+"tags": "news",
+"keywords": "",
+"url": "test-post-from-last-year.html",
+"summary": ""
+}
+
+
+
+]
