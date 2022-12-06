@@ -6,7 +6,7 @@ folder: stories
 summary: "This procedure describes how to create a user with necessary permissions."
 ---
 
-{% include important.html content="according to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}
+{% include important.html content="According to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}
 
 1. Sign in to the [AWS console](https://console.aws.amazon.com/).
 
@@ -36,21 +36,21 @@ summary: "This procedure describes how to create a user with necessary permissio
 
     {% include image.html file="iam/user/aws_editor_step_6.jpg" alt="Выбранные полномочия" caption="" %}
 
-7. Укажите необходимое количество тегов, которые состоят из ключей и значений. Например, ключ - environment (среда) и значение - development (разработка). Нажмите кнопку **Next: Review** (или же пропустите шаг добавления тегов, сразу нажмите кнопку **Next: Review**):
+7. On the **Tags** page, add tags as key-value pairs (for instance, key - `environment` and value - `development`). Choose **Next: Review**.
 
-    {% include note.html content="добавление тегов является необязательным действием. Однако, теги могут быть полезны во некоторых ситуациях. Например, с помощью них можно анализировать расходы денежных средств на используемые сервисы Amazon." %}
+    {% include note.html content="Tagging is the optional step. However, [tags can help to manage and organize AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)." %}
 
     {% include image.html file="iam/user/aws_editor_step_7.jpg" alt="Добавление тегов" caption="" %}
 
-8. Ознакомьтесь с настройками пользователя и нажмите кнопку **Create user** (Создать пользователя):
+8. Review new user's settings and choose **Create user**.
 
     {% include image.html file="iam/user/aws_editor_step_8.jpg" alt="Обзор настройки пользователя" caption="" %}
 
-9. Пользователь с необходимыми полномочиями успешно создан. Сохраните файл с информацией для доступа (Download.csv) и/или отправьте её по электронной почте:
+9. On the **Complete** page, download user security credentials or send email with login instructions to the user. 
 
     {% include image.html file="iam/user/aws_editor_step_9.jpg" alt="Сохранение файла с информацией для доступа" caption="" %}
 
 <br />
-[Следующий шаг: создание роли](https://techwritex.ru/aws_docs/create-role.html)
+[Next tutorial: Create a role](https://techwritex.ru/aws_docs/create-role.html)
 
 {% include links.html %}
