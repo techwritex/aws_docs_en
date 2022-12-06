@@ -3,10 +3,10 @@ repository: techwritex/aws_docs_en
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Example of technical documentation
+topnav_title: AWS Data Warehouse deployment
 # this appears on the top navigation bar next to the home button
 
-site_title: Example of technical documentation (Techwritex)
+site_title: AWS Data Warehouse deployment (Techwritex)
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: Vladimir Yusupov 
