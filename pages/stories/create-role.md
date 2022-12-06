@@ -20,7 +20,7 @@ summary: "This procedure describes how to create a role to allow an Amazon Redsh
 
     {% include image.html file="iam/role/aws_iam_step_4.jpg" alt="Настройки роли в IAM" caption="" %}
 
-5. On the **Permissions** page, select checbox **AmazonS3ReadOnlyAccess**. then **Set permissions boundary**. Choose **Next: Tags**.
+5. On the **Permissions** page, select checbox **AmazonS3ReadOnlyAccess**. In the **Set permissions boundary** section, select **Create role without a permission boundary**. Choose **Next: Tags**.
 
     {% include image.html file="iam/role/aws_iam_step_5.jpg" alt="Полномочия для загрузки данных из Amazon S3" caption="" %}
 
@@ -32,11 +32,11 @@ summary: "This procedure describes how to create a role to allow an Amazon Redsh
 
     {% include image.html file="iam/role/aws_iam_step_7.jpg" alt="Добавление тегов" caption="" %}
 
-7. Review new role's settings. For **Role name** specify the role name (required), for instance, `myFirstRedshiftRole` (text for **Role descrtiption** is optional). Choose **Create role**.
+7. Review new role's settings. For **Role name** specify the role name (for instance, `myFirstRedshiftRole`). Choose **Create role**.
 
     {% include image.html file="iam/role/aws_iam_step_8.jpg" alt="Проверка настроек создаваемой роли" caption="" %}
 
-8. The role has been created and added to the IAM role list.
+8. The role has been created and added to your IAM roles.
 
     {% include image.html file="iam/role/aws_iam_step_9.jpg" alt="Созданная роль в перечне ролей IAM" caption="" %}
 
