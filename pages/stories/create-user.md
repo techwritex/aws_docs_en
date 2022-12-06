@@ -38,7 +38,7 @@ summary: "This procedure describes how to create a user with necessary permissio
 
 7. On the **Tags** page, add tags as key-value pairs (for instance, key - `environment` and value - `development`). Choose **Next: Review**.
 
-    {% include note.html content="Tagging is the optional step. However, [tags can help to manage and organize AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)." %}
+    {% include note.html content="Tagging is the optional step. However, [tags can help to track and control access for users](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_iam-tags.html)." %}
 
     {% include image.html file="iam/user/aws_editor_step_7.jpg" alt="Добавление тегов" caption="" %}
 
