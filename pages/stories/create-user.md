@@ -18,7 +18,7 @@ summary: "This procedure describes how to create an user with necessary permissi
 
     {% include image.html file="iam/user/aws_editor_step_1.jpg" alt="Создание пользователя" caption="" %}
 
-4. In the user details section, for **User name** specify the user name (for instance, `mycloudsolnotes`). Select **AWS Management Console access**, then **Custom password**. Type a password. Choose **Next: Permissions**:
+4. In the user details section, for **User name** specify the user name (for instance, `mycloudsolnotes`). Select **AWS Management Console access** option, then **Custom password**. Type a password. Choose **Next: Permissions**:
 
     {% include image.html file="iam/user/aws_editor_step_2.jpg" alt="Настройки пользовтеля" caption="" %}
 
