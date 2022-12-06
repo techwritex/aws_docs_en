@@ -9,7 +9,7 @@ summary: "The following tutorials present complete end-to-end procedures for dat
 
 ## The task
 
-To create tutorials for developers about Data Warehouse deployment on AWS infrastructure.
+Create tutorials for developers about Data Warehouse deployment on AWS infrastructure.
 
 ## Stages of the document development process
 
