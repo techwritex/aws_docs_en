@@ -3,28 +3,28 @@ title: Create a user
 sidebar: general_sidebar
 permalink: create-user.html
 folder: stories
-summary: "This procedure describes how to create an user with necessary permissions."
+summary: "This procedure describes how to create a user with necessary permissions."
 ---
 
 {% include important.html content="according to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}
 
 1. Sign in to the [AWS console](https://console.aws.amazon.com/).
 
-2. In the AWS services list find **Identity and Access Management (IAM)** web service or enter IAM in the input field to choose the service:
+2. In the AWS services list, find **IAM** (AWS Identity and Access Management) web service or enter IAM in the input field to choose the service.
 
     {% include image.html file="iam/role/aws_iam_step_1.jpg" alt="Поиск сервиса управления доступом IAM" caption="" %}
 
-3. In the navigation pane, choose **Users**, then **Add user**:
+3. In the navigation pane, choose **Users**, then **Add user**.
 
     {% include image.html file="iam/user/aws_editor_step_1.jpg" alt="Создание пользователя" caption="" %}
 
-4. In the user details section, for **User name** specify the user name (for instance, `mycloudsolnotes`). Select **AWS Management Console access** option, then **Custom password**. Type a password. Choose **Next: Permissions**:
+4. On the **User details** page, for **User name** specify the user name (for instance, `mycloudsolnotes`). Select **AWS Management Console access**, then **Custom password**. Type initial password and choose **Next: Permissions**.
 
     {% include image.html file="iam/user/aws_editor_step_2.jpg" alt="Настройки пользовтеля" caption="" %}
 
-5. В разделе полномочий перейдите во вкладку **Attach existing policies directly** (Добавление существующих полномочий напрямую) и в поле поиска укажите следующие имена полномочий: 
-    - AmazonRedshiftQueryEditor (полномочия на редактор запросов Amazon Redshift),
-    - AmazonRedshiftReadOnlyAccess (полномочия на чтение данных Amazon Redshift):
+5. On the **Permissions** page, choose **Attach existing policies directly** and select the following policies: 
+    - **AmazonRedshiftQueryEditor**,
+    - **AmazonRedshiftReadOnlyAccess**.
 
     {% include image.html file="iam/user/aws_editor_step_3.jpg" alt="Настройки пользовтеля" caption="" %}
 
@@ -32,7 +32,7 @@ summary: "This procedure describes how to create an user with necessary permissi
 
     {% include image.html file="iam/user/aws_editor_step_5.jpg" alt="AmazonRedshiftReadOnlyAccess" caption="" %}
 
-6. После выбора полномочий нажмите кнопку **Next: Tags** для перехода к разделу добавления тегов:
+6. Choose **Next: Tags**.
 
     {% include image.html file="iam/user/aws_editor_step_6.jpg" alt="Выбранные полномочия" caption="" %}
 
