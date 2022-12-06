@@ -3,22 +3,22 @@ title: Create a user
 sidebar: general_sidebar
 permalink: create-user.html
 folder: stories
-summary: "This procedure describes how to create IAM user with necessary permissions."
+summary: "This procedure describes how to create an user with necessary permissions."
 ---
 
 {% include important.html content="according to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}
 
 1. Sign in to the [AWS console](https://console.aws.amazon.com/).
 
-2. В списке сервисов найдите сервис управления доступом **(IAM)** или воспользуйтесь строкой поиска, а затем перейдите на домашнюю страницу сервиса IAM:
+2. In the AWS services list find **Identity and Access Management (IAM)** web service or enter IAM in the input field to choose the service:
 
     {% include image.html file="iam/role/aws_iam_step_1.jpg" alt="Поиск сервиса управления доступом IAM" caption="" %}
 
-3. Перейдите в раздел **Users** (Пользователи) и выберите пользователя, которому планируете предоставить необходимые полномочия. Если пользователи отсутствуют, то создайте нового пользователя. Для этого нажмите кнопку **Add user** (Добавить пользователя):
+3. In the navigation pane, choose **Users**, then **Add user**:
 
     {% include image.html file="iam/user/aws_editor_step_1.jpg" alt="Создание пользователя" caption="" %}
 
-4. Укажите значение поля **User name** (Имя пользователя). В настройках **Access type** (Тип доступа) выберите опцию **AWS Management Console access** (Доступ к консоли управления AWS). Создайте самостоятельно пароль или воспользуйтесь функцией автогенерации пароля. Далее нажмите кнопку перехода к разделу предоставлению полномочий **Next: Permissions**:
+4. In the user details section, for **User name** specify the user name (for instance, `mycloudsolnotes`). Select **AWS Management Console access**, then **Custom password**. Type a password. Choose **Next: Permissions**:
 
     {% include image.html file="iam/user/aws_editor_step_2.jpg" alt="Настройки пользовтеля" caption="" %}
 
