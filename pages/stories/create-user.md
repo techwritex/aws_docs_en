@@ -1,16 +1,14 @@
 ---
-title: Создание пользователя
+title: Create a user
 sidebar: general_sidebar
 permalink: create-user.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по созданию пользователя с полномочиями на чтение данных Amazon Redshift и выполению запросов с помощью встроенного редактора."
+summary: "This procedure describes how to create IAM user with necessary permissions."
 ---
 
-{% include important.html content="предполагается, что у разработчика имеется учётная запись AWS для выполнения работ по развёртыванию хранилища данных с помощью инфраструктуры AWS. Если учётная запись отсутствует, сначала необходимо пройти регистрацию по ссылке [https://portal.aws.amazon.com/billing/signup](https://portal.aws.amazon.com/billing/signup), затем вернуться к данному руководству. Также политиками безопасности AWS настоятельно рекомендуется максимально сократить или запретить использование аккаунта с правами root, созданного при регистрации. Для работы с сервисами необходимо создать отдельных пользователей и/или группы пользователей и назначить им минимальные привелегии." %}
+{% include important.html content="according to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}
 
-1. Войдите в консоль управления AWS:
-
-    [https://console.aws.amazon.com/](https://console.aws.amazon.com/)
+1. Sign in to the [AWS console](https://console.aws.amazon.com/).
 
 2. В списке сервисов найдите сервис управления доступом **(IAM)** или воспользуйтесь строкой поиска, а затем перейдите на домашнюю страницу сервиса IAM:
 

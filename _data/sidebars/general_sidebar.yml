@@ -2,66 +2,34 @@
 
 entries:
 - title: sidebar
-  product: Руководство разработчика
+  product: Tutorials
   # version: (v. 1.0)
   folders:
 
-  # - title: IAM
-  #   output: web
-  #   folderitems:
-
-  #   - title: Создание пользователя 
-  #     url: /create-user.html
-  #     output: web
-
-  #   - title: Создание роли
-  #     url: /create-role.html
-  #     output: web
-
-  # - title: S3
-  #   output: web
-  #   folderitems:
-
-  #   - title: Создание корзины
-  #     url: /create-bucket.html
-  #     output: web
-  
-  # - title: Redshift
-  #   output: web
-  #   folderitems:
-
-  #   - title: Создание кластера
-  #     url: /create-cluster.html
-  #     output: web
-
-  #   - title: Подключение к кластеру и выполнение запросов
-  #     url: /run-queries.html
-  #     output: web
-
-  - title: Создание пользователя 
+  - title: Create a user 
     url: create-user.html
     output: web
 
-  - title: Создание роли
+  - title: Create a role
     url: create-role.html
     output: web
 
-  - title: Создание корзины S3
+  - title: Create S3 bucket
     url: create-s3-bucket.html
     output: web
   
-  - title: Создание кластера
+  - title: Create a cluster
     url: create-cluster.html
     output: web
   
-  - title: Подключение к кластеру и выполнение запросов
+  - title: Run queries
     url: run-queries.html
     output: web
 
-  - title: Загрузка данных из Amazon S3
+  - title: Load sample data
     url: load-data-from-s3.html
     output: web
 
-  - title: Удаление кластера
+  - title: Delete a cluster
     url: delete-cluster.html
     output: web
