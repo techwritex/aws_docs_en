@@ -14,7 +14,7 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
 3. In the **General configuration** section, for **Bucket name** type a name of your bucket, then select **Region**.
 
-    {% include note.html content="The bucket name must: <br/> * be unique (as a domain name);<br/> * be between 3 and 63 characters long, <br/> * не содержит буквы в верхнем регистре; <br/> * consist only of lowercase letters, numbers, dots (.), and hyphens (-); <br/> * begin and end with a letter or number; <br/> * not be formatted as an IP address (for instance, 192.168.5.4). <br/> For detailed information about naming, see [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)." %}
+    {% include note.html content="The bucket name must: <br/> * be unique (as a domain name);<br/> * be between 3 and 63 characters long, <br/> * consist only of lowercase letters, numbers, dots (.), and hyphens (-); <br/> * begin and end with a letter or number; <br/> * not be formatted as an IP address (for instance, 192.168.5.4). <br/> For detailed information about naming, see [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_3.jpg" alt="Общие настройки корзины Amazon S3" caption="" %}
 
