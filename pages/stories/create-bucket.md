@@ -18,11 +18,11 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
     {% include image.html file="s3/aws_s3_bucket_step_3.jpg" alt="Общие настройки корзины Amazon S3" caption="" %}
 
-4. In the **Bucket settings for Block Public Access** section select **Block all public access**.
+4. In the **Bucket settings for Block Public Access** section, select **Block all public access**.
 
     {% include image.html file="s3/aws_s3_bucket_step_4.jpg" alt="Публичный доступ заблокирован" caption="" %}
 
-5. In the **Bucket Versioning** section select **Disable**:
+5. In the **Bucket Versioning** section, select **Disable**.
 
     {% include image.html file="s3/aws_s3_bucket_step_5.jpg" alt="Управление версиями корзины" caption="" %}
 
@@ -88,9 +88,9 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
 
 <br />
-[Предыдущий шаг: создание роли](https://techwritex.ru/aws_docs/create-role.html)
+[Previous tutorial: Creating IAM role](https://techwritex.ru/aws_docs_en/create-role.html)
 
 <br />
-[Следующий шаг: создание кластера](https://techwritex.ru/aws_docs/create-cluster.html)
+[Next tutorial: Creating Redshift cluster](https://techwritex.ru/aws_docs_en/create-cluster.html)
 
 {% include links.html %}
