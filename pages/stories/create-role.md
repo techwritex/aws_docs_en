@@ -1,12 +1,12 @@
 ---
-title: Create a role
+title: Creating IAM role
 sidebar: general_sidebar
 permalink: create-role.html
 folder: stories
-summary: "This procedure describes how to create a role to allow an Amazon Redshift cluster to communicate with Amazon S3."
+summary: "This procedure describes how to create IAM role to allow an Amazon Redshift cluster to communicate with Amazon S3."
 ---
 
-1. Sign in to the [IAM console](https://console.aws.amazon.com/iam).
+1. Sign in to the [Amazon S3 console](https://console.aws.amazon.com/s3/).
 
 2. In the navigation pane, choose **Roles**, then **Create role**.
 

@@ -1,9 +1,9 @@
 ---
-title: Create a user
+title: Creating IAM user
 sidebar: general_sidebar
 permalink: create-user.html
 folder: stories
-summary: "This procedure describes how to create a user with necessary permissions."
+summary: "This procedure describes how to create IAM user with necessary permissions using AWS console."
 ---
 
 {% include important.html content="According to best practice, use the root user for [tasks it's required](https://docs.aws.amazon.com/accounts/latest/reference/root-user-tasks.html); for other tasks create new IAM users and grant them least-privilege permissions to perform the tasks." %}

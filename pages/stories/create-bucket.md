@@ -1,38 +1,34 @@
 ---
-title: Создание корзины S3
+title: Creating S3 bucket
 sidebar: general_sidebar
 permalink: create-s3-bucket.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по созданию корзины (bucket) Amazon S3, которая будет использована в качестве источника для хранилища данных на Amazon Redshift."
+summary: "This procedure describes how to create a bucket in Amazon S3 using AWS console."
 ---
 
-1. Войдите в консоль управления **Amazon S3**:
+1. Sign in to the [Amazon S3](https://console.aws.amazon.com/s3).
 
-    [https://console.aws.amazon.com/s3](https://console.aws.amazon.com/s3)
-
-2. Нажмите кнопку **Create bucket** (Создать корзину):
+2. Choose **Create bucket**.
 
     {% include image.html file="s3/aws_s3_bucket_step_2.jpg" alt="Создание корзины Amazon S3" caption="" %}
 
-3. В разделе **General configuration** (Общие настройки) укажите имя корзины и регион расположения:
+3. In the **General configuration** section, for **Bucket name** type a name of your bucket, then select **Region**.
 
-    {% include note.html content="требования к имени корзины: <br/> * уникальное в рамках сервиса Amazon S3 (представляйте имя корзины, как доменное имя),<br/> * минимальная длина имени 3 символа, <br/> * максимальная - 63 символа, <br/> * не содержит буквы в верхнем регистре, <br/> * состоит только из букв в нижнем регистре, цифр, точек (.) и дефисов (-), <br/> * начинается с буквы в нижнем регистре или цифры, <br/> * не имеет формат IP адреса (например, 192.168.5.4)." %}
-
-    {% include important.html content="после того, как корзина будет создана, её имя уже не может быть изменено." %}
+    {% include note.html content="The bucket name must: <br/> * be unique (as a domain name);<br/> * be between 3 and 63 characters long, <br/> * не содержит буквы в верхнем регистре; <br/> * consist only of lowercase letters, numbers, dots (.), and hyphens (-); <br/> * begin and end with a letter or number; <br/> * not be formatted as an IP address (for instance, 192.168.5.4). <br/> For detailed information about naming, see [Bucket naming rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html)." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_3.jpg" alt="Общие настройки корзины Amazon S3" caption="" %}
 
-4. В разделе **Bucket settings for Block Public Access** (Настройки блокировки публичного доступа корзины) выберите вариант *Block all public access* (Публичный доступ к корзине и вложенным объектам полностью заблокирован):
+4. In the **Bucket settings for Block Public Access** section select **Block all public access**.
 
     {% include image.html file="s3/aws_s3_bucket_step_4.jpg" alt="Публичный доступ заблокирован" caption="" %}
 
-5. В разделе **Bucket Versioning** (Управление версиями корзины) выберите настройку для ведения версий объектов корзины. Данная настройка позволяет легко восстанавливать удаленные объекты в результате действий пользователя или же сбоев приложения. По-умолчанию версионность отключена:
+5. In the **Bucket Versioning** section select **Disable**:
 
     {% include image.html file="s3/aws_s3_bucket_step_5.jpg" alt="Управление версиями корзины" caption="" %}
 
-6. Укажите необходимое количество тегов, которые состоят из ключей и значений. Например, ключ - environment (среда) и значение - development (разработка):
+6. In the **Tags** section, add tags as key-value pairs (for instance, key - `environment` and value - `development`). Choose **Next: Review**.
 
-    {% include note.html content="добавление тегов является необязательным действием. Однако, теги могут быть полезны во некоторых ситуациях. Например, с помощью них можно анализировать расходы денежных средств на используемые сервисы Amazon." %}
+    {% include note.html content="Tagging is the optional step. However, [tags can help to manage, identify, and organize resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_6.jpg" alt="Добавление тегов" caption="" %}
 

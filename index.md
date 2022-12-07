@@ -1,5 +1,5 @@
 ---
-title: "Deploy a data warehouse on AWS"
+title: "Deploy a Data Warehouse on AWS"
 keywords: 
 # tags:
 sidebar: general_sidebar

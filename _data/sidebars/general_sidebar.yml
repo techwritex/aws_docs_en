@@ -6,30 +6,30 @@ entries:
   # version: (v. 1.0)
   folders:
 
-  - title: Create a user 
+  - title: Creating IAM user 
     url: create-user.html
     output: web
 
-  - title: Create a role
+  - title: Creating IAM role
     url: create-role.html
     output: web
 
-  - title: Create S3 bucket
+  - title: Creating S3 bucket
     url: create-s3-bucket.html
     output: web
   
-  - title: Create a cluster
+  - title: Creating Redshift cluster
     url: create-cluster.html
     output: web
   
-  - title: Run queries
+  - title: Running queries
     url: run-queries.html
     output: web
 
-  - title: Load sample data
+  - title: Loading sample data
     url: load-data-from-s3.html
     output: web
 
-  - title: Delete a cluster
+  - title: Deleting Redshift cluster
     url: delete-cluster.html
     output: web
