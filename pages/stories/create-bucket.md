@@ -24,68 +24,71 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
 5. In the **Bucket Versioning** section, select **Disable**.
 
+    {% include note.html content="Bucket Versioning is the optional step." %}
+
     {% include image.html file="s3/aws_s3_bucket_step_5.jpg" alt="Управление версиями корзины" caption="" %}
 
-6. In the **Tags** section, add tags as key-value pairs (for instance, key - `environment` and value - `development`). Choose **Next: Review**.
+6. In the **Tags** section, add tags as key-value pairs (for instance, key - `environment` and value - `development`).
 
     {% include note.html content="Tagging is the optional step. However, [tags can help to manage, identify, and organize resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_6.jpg" alt="Добавление тегов" caption="" %}
 
-7. В разделе **Default encryption** (Шифрование) выберите значение *Disabled* (шифрование всех объектов корзины отключено):
+7. In the **Encryption** section, select **Disabled**.
+
+    {% include note.html content="Encription is the optional step." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_7.jpg" alt="Настройки шифрования" caption="" %}
 
-8. Нажмите кнопку **Create bucket** (Создать корзину):
+8. Choose **Create bucket**.
 
     {% include image.html file="s3/aws_s3_bucket_step_8.jpg" alt="Создать корзину" caption="" %}
 
-9. Корзина успешно создана. Нажмите на ссылку в виде имени корзины для перехода в неё:
+9. After creating your backet, choose the bucket name:
 
     {% include image.html file="s3/aws_s3_bucket_step_9.jpg" alt="Корзина S3 успешно создана" caption="" %}
 
     {% include image.html file="s3/aws_s3_bucket_step_10.jpg" alt="Корзина S3 успешно создана" caption="" %}
 
-10. Скачайте и распакуйте архив с файлами, подготовленными Amazon Web Services, по ссылке:
+10. Download and unzip the file [tickitdb.zip](https://docs.aws.amazon.com/redshift/latest/gsg/samples/tickitdb.zip) with sample data.
 
-    [https://docs.aws.amazon.com/redshift/latest/gsg/samples/tickitdb.zip](https://docs.aws.amazon.com/redshift/latest/gsg/samples/tickitdb.zip)
-
-11. Вернитесь в консоль Amazon S3, перейдите в созданную ранее корзину и нажмите кнопку **Upload** (Загрузить):
+11. Go back to the [Amazon S3 console](https://console.aws.amazon.com/s3), then move to your bucket (from step 9). Choose **Upload**:
 
     {% include image.html file="s3/aws_s3_bucket_step_11.jpg" alt="Загрузка файлов в корзину S3" caption="" %}
 
-12. Выберите файлы, укажите полномочия *Read/Write* (Чтение/Запись) на загружаемые файлы и нажмите кнопку **Next** (Далее):
+12. Select files (from the file tickitdb.zip) to upload into the bucket, then set **Object Permissions**. Choose **Next**.
 
     {% include image.html file="s3/aws_s3_bucket_step_12.jpg" alt="Полномочия на файлы" caption="" %}
 
-13. Выберите класс хранения *One Zone-IA* (так как доступ к данным будет осуществляется относительно редко, но при этом должен обеспечиваться быстро) и нажмите кнопку **Next** (Далее):
+13. Select **One Zone-IA**, then choose **Next**.
+
+    {% include note.html content="For more information about storage classes, see [Using Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html)." %}
 
     {% include image.html file="s3/aws_s3_bucket_step_13.jpg" alt="Выбор класса хранения" caption="" %}
 
-14. Проверьте выполненные настройки и нажмите кнопку **Upload** (Загрузить):
+14. Review settings and choose **Upload**.
 
     {% include image.html file="s3/aws_s3_bucket_step_14.jpg" alt="Загрузка файлов" caption="" %}
 
     {% include image.html file="s3/aws_s3_bucket_step_14_2.jpg" alt="Загрузка файлов" caption="" %}
 
-15. В корзине создайте папку, в которую переместите загруженные файлы. Нажмите кнопку **Create folder** (Создать папку):
+15. In the bucket, choose **Create folder**.
 
     {% include image.html file="s3/aws_s3_bucket_step_15.jpg" alt="Создание папки" caption="" %}
 
-16. Укажите имя папки *tickit*, тип шифрования оставьте по-умолчанию и нажмите кнопку **Save** (Сохранить):
+16. Type the folder name (for instance, `tickit`). For encription settings, select **None**. Choose **Save**.
 
     {% include image.html file="s3/aws_s3_bucket_step_16.jpg" alt="Создание папки" caption="" %}
 
-17. Отметьте загруженные файлы. В контекстном (выпадающем) меню **Actions** (Действия) выберите пункт **Move** (Переместить):
+17. Select uploading files. Choose **Actions**, then **Move**.
 
     {% include image.html file="s3/aws_s3_bucket_step_17.jpg" alt="Перемещение файлов в папку" caption="" %}
 
-18. Укажите путь перемещения файлов и нажмите кнопку **Choose** (Выбрать):
+18. Choose move destination (`tickit`), then **Choose**.
 
     {% include image.html file="s3/aws_s3_bucket_step_18.jpg" alt="Перемещение файлов в папку" caption="" %}
 
-19. Данные в корзине Amazon S3 для дальнейшей передачи их в Amazon Redshift успешно подготовлены.
-
+19. The data successfully prepared for transfer to the cluster.
 
 <br />
 [Previous tutorial: Creating IAM role](https://techwritex.ru/aws_docs_en/create-role.html)
