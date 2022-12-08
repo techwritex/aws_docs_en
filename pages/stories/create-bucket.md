@@ -76,7 +76,7 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
     {% include image.html file="s3/aws_s3_bucket_step_15.jpg" alt="Создание папки" caption="" %}
 
-16. Type the folder name (for instance, `tickit`). For encription settings, select **None**. Choose **Save**.
+16. Type the folder name (for instance, *tickit*). For encription settings, select **None**. Choose **Save**.
 
     {% include image.html file="s3/aws_s3_bucket_step_16.jpg" alt="Создание папки" caption="" %}
 
@@ -84,7 +84,7 @@ summary: "This procedure describes how to create a bucket in Amazon S3 using AWS
 
     {% include image.html file="s3/aws_s3_bucket_step_17.jpg" alt="Перемещение файлов в папку" caption="" %}
 
-18. Choose move destination (`tickit`), then **Choose**.
+18. Choose move destination (*tickit*), then **Choose**.
 
     {% include image.html file="s3/aws_s3_bucket_step_18.jpg" alt="Перемещение файлов в папку" caption="" %}
 
