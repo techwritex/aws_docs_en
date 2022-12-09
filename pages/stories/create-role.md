@@ -6,7 +6,7 @@ folder: stories
 summary: "This procedure describes how to create IAM role to allow an Amazon Redshift cluster to communicate with Amazon S3."
 ---
 
-1. Sign in to the [Amazon S3 console](https://console.aws.amazon.com/s3/).
+1. Sign in to the [IAM console](https://console.aws.amazon.com/iam/home).
 
 2. In the navigation pane, choose **Roles**, then **Create role**.
 
@@ -45,9 +45,9 @@ summary: "This procedure describes how to create IAM role to allow an Amazon Red
     {% include image.html file="iam/role/aws_iam_step_10.jpg" alt="Код ARN - Amazon Resource Name" caption="" %}
 
 <br />
-[Previous tutorial: Create a user](https://techwritex.ru/aws_docs_en/create-user.html)
+[Previous tutorial: Creating IAM user](https://techwritex.ru/aws_docs_en/create-user.html)
 
 <br />
-[Next tutorial: Create an S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html)
+[Next tutorial: Creating S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html)
 
 {% include links.html %}

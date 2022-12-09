@@ -1,17 +1,15 @@
 ---
-title: Создание кластера
+title: Creating Redshift cluster
 sidebar: general_sidebar
 permalink: create-cluster.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по созданию и настройке кластера Amazon Redshift."
+summary: "This procedure describes how to create an Amazon Redshift cluster."
 # simple_map: true
 # map_name: usermap
 # box_number: 1
 ---
 
-1. Откройте консоль **Amazon Redshift** по следующей ссылке:
-
-    [https://console.aws.amazon.com/redshift](https://console.aws.amazon.com/redshift)
+1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift). 
 
 2. В правом верхнем углу консоли выберите **AWS регион**, в котором планируется создание кластера:
 
@@ -58,9 +56,9 @@ summary: "В разделе представлена последователь�
 
 
 <br />
-[Предыдущий шаг: создание корзны S3](https://techwritex.ru/aws_docs/create-s3-bucket.html)
+[Previous tutorial: Creating S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html)
 
 <br />
-[Следующий шаг: подключение к кластеру и выполнение запросов](https://techwritex.ru/aws_docs/run-queries.html)
+[Next tutorial: Running queries](https://techwritex.ru/aws_docs_en/run-queries.html)
 
 {% include links.html %}

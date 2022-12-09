@@ -51,6 +51,6 @@ summary: "This procedure describes how to create IAM user with necessary permiss
     {% include image.html file="iam/user/aws_editor_step_9.jpg" alt="Сохранение файла с информацией для доступа" caption="" %}
 
 <br />
-[Next tutorial: Create a role](https://techwritex.ru/aws_docs_en/create-role.html)
+[Next tutorial: Creating IAM role](https://techwritex.ru/aws_docs_en/create-role.html)
 
 {% include links.html %}
