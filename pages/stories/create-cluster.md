@@ -11,26 +11,23 @@ summary: "This procedure describes how to create an Amazon Redshift cluster."
 
 1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift). 
 
-2. В правом верхнем углу консоли выберите **AWS регион**, в котором планируется создание кластера:
+2. Select **AWS region**, where you want your cluster to reside. For instance, `N. Virginia`.
 
     {% include image.html file="cluster/cluster_step_2_1.jpg" alt="Выбор AWS региона" caption="" %}
 
     <!-- {% include image.html file="cluster/cluster_step_2_2.jpg" alt="Перечень AWS регионов" caption="" %} -->
 
-3. В левой навигационной панели выберите пукт меню **Clusters** (Кластеры), после чего нажмите кнопку **Create cluster** (Создать кластер):
+3. In the navigation pane, choose **Clusters**, then **Create cluster**.
 
     {% include image.html file="cluster/cluster_step_3_1.jpg" alt="Переход в раздел создания кластеров" caption="" %}
 
     {% include image.html file="cluster/cluster_step_3_3.jpg" alt="Кнопка создания кластера" caption="" %}
 
-4. Укажите значение поля **Cluster identifier** (Идентификатор кластера) и выберите конфигурацию **Free trial** (Бесплатная пробная версия):
+4. Enter **Cluster identifier**, then chooose **Free trial**.
 
-    {% include important.html content="Конфигурация 'Free trial' предоставляет возможность работы с кластером Amazon Redshift в течение двух месяцев бесплатно (750 часов на один узел в месяц на протяжении двух месяцев). Если кластер имеет несколько узлов, бесплатный пробный период истечёт раньше двух месяцев. По истечению предоставленного времени (если преследуются обучающие цели) необходимо снять слепок с кластера (для дальнейших продуктивных действий, если потребуется) и удалить кластер. Несвоевременное удаление приведёт к начислению оплаты за использование Amazon Redshift." %}
+    {% include note.html content="The identifier must be from 1-63 characters. Valid characters are lowercase and hyphen." %}
 
-    {% include note.html content="идентификатор кластера должен быть уникальным и состоять из следующих символов:<br />
-        * строчные буквы английского алфавита (a - z),<br />
-        * дефис (-).<br />
-    Длина идентификатора должна составлять от 1 до 63 символов." %}
+    {% include important.html content="When you start your trial, you will receive 750 free hours per month for two full months. If you are running multiple nodes, you may exceed 750 hours of usage in one month. To stop using trial hours, create a snapshot to restore later, and delete your cluster." %}
 
     {% include image.html file="cluster/cluster_step_4.jpg" alt="Конфигурация кластера" caption="" %}
 
