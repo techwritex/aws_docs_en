@@ -23,7 +23,7 @@ summary: "This procedure describes how to create an Amazon Redshift cluster."
 
     {% include image.html file="cluster/cluster_step_3_3.jpg" alt="Кнопка создания кластера" caption="" %}
 
-4. Enter **Cluster identifier**, then chooose **Free trial**.
+4. Enter **Cluster identifier**, then choose **Free trial**.
 
     {% include note.html content="The identifier must be from 1-63 characters. Valid characters are lowercase and hyphen." %}
 
@@ -31,11 +31,11 @@ summary: "This procedure describes how to create an Amazon Redshift cluster."
 
     {% include image.html file="cluster/cluster_step_4.jpg" alt="Конфигурация кластера" caption="" %}
 
-5. В разделе **Database configuration** (Конфигурация базы данных) опционально укажите значения для полей *Database name* (Имя базы данных) и *Database port* (Порт базы данных), а также обязательно укажите значения для *Master user name* (Имя главного пользователя) и *Master user password* (Пароль главного пользователя):
+5. In the **Database configuration** section, specify **Database name** (optional), **Database port** (optional), **Master user name** (required) и **Master user password** (required).
 
     {% include image.html file="cluster/cluster_step_5.jpg" alt="Конфигурация базы данных" caption="" %}
 
-6. В разделе **Cluster permissions** (Разрешения для кластера) выберите созданную IAM роль и нажмите кнопку **Add IAM role** (Добавить IAM роль):
+6. In the **Cluster permissions** section, select ([IAM role to allow an Amazon Redshift cluster to communicate with Amazon S3](https://techwritex.ru/aws_docs_en/create-role.html)), then choose **Add IAM role**.
 
     {% include image.html file="cluster/cluster_step_6_1.jpg" alt="Добавление роли для загрузки данных из S3" caption="" %}
 
@@ -43,7 +43,7 @@ summary: "This procedure describes how to create an Amazon Redshift cluster."
 
     {% include image.html file="cluster/cluster_step_6_3.jpg" alt="Добавление роли для загрузки данных из S3" caption="" %}
 
-7. Нажмите кнопку **Create cluster** (Создать кластер):
+7. Choose **Create cluster**.
 
     {% include image.html file="cluster/cluster_step_7.jpg" alt="Создание кластера" caption="" %}
 
