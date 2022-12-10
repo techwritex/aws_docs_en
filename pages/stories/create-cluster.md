@@ -35,7 +35,7 @@ summary: "This procedure describes how to create an Amazon Redshift cluster."
 
     {% include image.html file="cluster/cluster_step_5.jpg" alt="Конфигурация базы данных" caption="" %}
 
-6. In the **Cluster permissions** section, select ([IAM role to allow an Amazon Redshift cluster to communicate with Amazon S3](https://techwritex.ru/aws_docs_en/create-role.html)), then choose **Add IAM role**.
+6. In the **Cluster permissions** section, select [IAM role to allow an Amazon Redshift cluster to communicate with Amazon S3](https://techwritex.ru/aws_docs_en/create-role.html), then choose **Add IAM role**.
 
     {% include image.html file="cluster/cluster_step_6_1.jpg" alt="Добавление роли для загрузки данных из S3" caption="" %}
 
