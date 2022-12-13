@@ -3,26 +3,26 @@ title: Running queries
 sidebar: general_sidebar
 permalink: run-queries.html
 folder: stories
-summary: "This procedure describes how to connect the cluster and querying it using the query editor."
+summary: "This procedure describes how to connect to the cluster and querying it using the query editor."
 ---
 
-1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift)(if you leave it after the previous step):
+1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift) (if you leave it after the [previous step](https://techwritex.ru/aws_docs_en/create-cluster.html)):
 
 2. In the navigation pane, choose **Editor**, then **Query editor**.
 
     {% include image.html file="editor/editor_step_2.jpg" alt="Запуск редактора запросов" caption="" %}
 
-3. In the **Connect to database** section, specify parameters from the [**Creating cluster**](/create-cluster.html) step, then choose **Connect to database**.
+3. In the **Connect to database** section, enter the connection parameters from the [**Creating cluster**](https://techwritex.ru/aws_docs_en/create-cluster.html) step, then choose **Connect to database**.
 
     {% include image.html file="editor/editor_step_3.jpg" alt="Соединение с базой данных" caption="" %}
 
-4. В открывшемся интерфейсе редактора из списка схем выберите **Public**:
+4. Choose `public` schema.
 
     {% include image.html file="editor/editor_step_4_1.jpg" alt="Выбор схемы" caption="" %}
 
     {% include image.html file="editor/editor_step_4_2.jpg" alt="Выбор схемы" caption="" %}
 
-5. В редакторе запросов введите код создания таблицы *Cars* (*Автомобили*) и нажмите кнопку **Run** (Запустить):
+5. Create `Cars` table in the cluster (add the following sql, then choose **Run**).
 
     ```sql
     create table cars(bodystyle varchar (10), model varchar(20));
@@ -32,9 +32,9 @@ summary: "This procedure describes how to connect the cluster and querying it us
 
     {% include image.html file="editor/editor_step_5_2.jpg" alt="Создание таблицы" caption="" %}
 
-6. Перед  вводом новой команды нажмите кнопку **Clear** (Очистить) для удаления предыдущего кода в поле ввода редактора.
+6. Before the next command, choose **Clear**.
 
-7. Введите команду заполнения таблицы *Cars* (Автомобили) и нажмите кнопку **Run** (Запустить):
+7. Put some sample data into the `Cars` table.
 
     ```sql
     insert into cars values 
@@ -51,7 +51,7 @@ summary: "This procedure describes how to connect the cluster and querying it us
 
     {% include image.html file="editor/editor_step_7.jpg" alt="Заполнение таблицы" caption="" %}
 
-8. Для просмотра содержимого таблицы выполните следующий запрос:
+8. Try an example query.
 
     ```sql
     select * from cars;
@@ -61,16 +61,14 @@ summary: "This procedure describes how to connect the cluster and querying it us
 
     {% include image.html file="editor/editor_step_8_2.jpg" alt="Запрос данных" caption="" %}
 
-9. Для выгрузки результатов в файл выберите нужный формат в меню **Export** (Экспорт):
+9. Select **Export** option to save the query result.
 
     {% include image.html file="editor/editor_step_9.jpg" alt="Выгрузка результатов в файл" caption="" %}
 
-10. SQL-запросы с помощью встроенного редактора успешно выполняются.
+<br />
+[Previous tutorial: Creating Redshift cluster](https://techwritex.ru/aws_docs_en/create-cluster.html)
 
 <br />
-[Предыдущий шаг: создание кластера](https://techwritex.ru/aws_docs/create-cluster.html)
-
-<br />
-[Следующий шаг: загрузка данных из Amazon S3](https://techwritex.ru/aws_docs/load-data-from-s3.html)
+[Next tutorial: Loading sample data](https://techwritex.ru/aws_docs_en/load-data-from-s3.html)
 
 {% include links.html %}
