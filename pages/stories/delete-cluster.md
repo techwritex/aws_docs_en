@@ -1,5 +1,5 @@
 ---
-title: Удаление кластера
+title: Deleting Redshift cluster
 sidebar: general_sidebar
 permalink: delete-cluster.html
 folder: stories
@@ -33,7 +33,7 @@ summary: "В разделе представлена последователь�
     {% include image.html file="cluster/cluster_step_12.jpg" alt="Удаление кластера" caption="" %}
 
     <br />
-[Предыдущий шаг: загрузка данных из Amazon S3](https://techwritex.ru/aws_docs/load-data-from-s3.html)
+[Previous tutorial: Loading sample data](https://techwritex.ru/aws_docs_en/load-data-from-s3.html)
 
 
 {% include links.html %}

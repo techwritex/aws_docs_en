@@ -1,5 +1,5 @@
 ---
-title: Загрузка данных из Amazon S3
+title: Loading sample data from S3
 sidebar: general_sidebar
 permalink: load-data-from-s3.html
 folder: stories
@@ -142,9 +142,9 @@ summary: "В разделе представлена последователь�
 {% include important.html content="после выполнения всех шагов по развёртыванию хранилища данных в учебных и ознакомительных целях, настоятельно рекомендуется удалить кластер (предварительно сделать слепок данных!) во избежании начисления оплаты по окончании пробного периода." %}
 
 <br />
-[Предыдущий шаг: подключение к кластеру и выполнение запросов](https://techwritex.ru/aws_docs/run-queries.html)
+[Previous tutorial: Running queries](https://techwritex.ru/aws_docs_en/run-queries.html)
 
 <br />
-[Следующий шаг: удаление кластера](https://techwritex.ru/aws_docs/delete-cluster.html)
+[Next tutorial: Deleting Redshift cluster](https://techwritex.ru/aws_docs_en/delete-cluster.html)
 
 {% include links.html %}
