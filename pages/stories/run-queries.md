@@ -1,22 +1,18 @@
 ---
-title: Подключение к кластеру и выполнение запросов
+title: Running queries 
 sidebar: general_sidebar
 permalink: run-queries.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по соединению с кластером и выполнению sql-запросов с помощью встроенного редактора."
+summary: "This procedure describes how to connect the cluster and querying it using the query editor."
 ---
 
-{% include note.html content="встроенный редактор имеет ряд ограничений, поэтому для продуктивных данных рекомендуется использовать SQL-клиент, который поддерживает драйвера JDBC или ODBC. Тем не менее, для ознакомительных учебных целей возможностей встроенного редактора достаточно." %}
+1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift)(if you leave it after the previous step):
 
-1. Войдите в консоль управления **Amazon Redshift** (если вышли из неё после выполнения предыдущего шага):
-
-    [https://console.aws.amazon.com/redshift](https://console.aws.amazon.com/redshift)
-
-2. В левой навигационной панели выберите пункт **Editor** (Редактор), затем **Query editor** (Редактор запросов):
+2. In the navigation pane, choose **Editor**, then **Query editor**.
 
     {% include image.html file="editor/editor_step_2.jpg" alt="Запуск редактора запросов" caption="" %}
 
-3. В окне **Connect to database** (Соединение с базой данных) укажите параметры, которые были указаны при создании кластера ([п.5 шага "Создание кластера"](/create-cluster.html)) и нажмите кнопку **Connect to database** (Соединиться с базой данных):
+3. In the **Connect to database** section, specify parameters from the [**Creating cluster**](/create-cluster.html) step, then choose **Connect to database**.
 
     {% include image.html file="editor/editor_step_3.jpg" alt="Соединение с базой данных" caption="" %}
 
