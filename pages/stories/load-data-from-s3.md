@@ -8,7 +8,7 @@ summary: "This procedure describes how to load data to the cluster from Amazon S
 
 1. Repeat steps 1-5 from the [previous tutorial](https://techwritex.ru/aws_docs_en/run-queries.html) (if you leave **Amazon Redshift console**).
 
-2. According to files in the [you S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html), create tables in the cluster. Add the following sql, then choose **Run**.
+2. According to files in the [you S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html), create tables in the cluster. Add the following sql examples, then choose **Run**.
 
     ```sql
     create table users(

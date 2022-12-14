@@ -22,7 +22,7 @@ summary: "This procedure describes how to connect to the cluster and querying it
 
     {% include image.html file="editor/editor_step_4_2.jpg" alt="Выбор схемы" caption="" %}
 
-5. Create `Cars` table in the cluster (add the following sql, then choose **Run**).
+5. Create `Cars` table in the cluster. Add the following sql examples, then choose **Run**.
 
     ```sql
     create table cars(bodystyle varchar (10), model varchar(20));
