@@ -6,7 +6,7 @@ folder: stories
 summary: "This procedure describes how to connect to the cluster and querying it using the query editor."
 ---
 
-1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift) (if you leave it after the [previous step](https://techwritex.ru/aws_docs_en/create-cluster.html)):
+1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift) (if you leave it after the [previous tutorial](https://techwritex.ru/aws_docs_en/create-cluster.html)):
 
 2. In the navigation pane, choose **Editor**, then **Query editor**.
 

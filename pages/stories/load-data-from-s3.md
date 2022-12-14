@@ -3,12 +3,12 @@ title: Loading sample data from S3
 sidebar: general_sidebar
 permalink: load-data-from-s3.html
 folder: stories
-summary: "В разделе представлена последовательность шагов по загрузке данных корзины Amazon S3."
+summary: "This procedure describes how to load data to the cluster from Amazon S3 bucket."
 ---
 
-1. Выполните пункты 1-5 шага ["Подключение к кластеру и выполнение запросов"](/run-queries.html) (если вышли из панели управления Amazon Redshift после выполнения предыдущего шага):
+1. Repeat steps 1-5 from the [previous tutorial](https://techwritex.ru/aws_docs_en/run-queries.html) (if you leave **Amazon Redshift console**).
 
-2. Создайте талицы базы данных согласно файлам загруженным в корзину Amazon S3. В редакторе запросов поочередно введите представленные ниже образцы кода и нажмите кнопку **Run** (Запустить):
+2. According to files in the [you S3 bucket](https://techwritex.ru/aws_docs_en/create-s3-bucket.html), create tables in the cluster. Add the following sql, then choose **Run**.
 
     ```sql
     create table users(
@@ -97,25 +97,14 @@ summary: "В разделе представлена последователь�
 	saletime timestamp);
     ````
 
-3. Загрузите поочередно тестовые данные из корзины Amazon S3 с помощью команды **COPY** по указанному шаблону:
+3. Load sample data from Amazon S3 into new tables in the cluster by using the `COPY` command.
 
     ```sql
     copy users from 's3://<bucketName>/<folderName>/<fileName>' 
     credentials 'aws_iam_role=<iam-role-arn>' 
     delimiter '|' region '<aws-region>';
     ````
-
-    где:
-
-    - \<bucketName\> - имя корзины S3,
-
-    - \<folderName\> - имя папки (если создавалась),
-
-    - \<fileName\> - имя загружаемого файла,
-
-    - \<iam-role-arn\> - код ARN роли (п.9 шаг ["Создание роли"](/create-role.html)),
-
-    - \<aws-region\> - регион, в котором создана корзина.
+    {% include note.html content="See `<iam-role-arn\>` in the step 9 of [Creating IAM role tutorial](https://techwritex.ru/aws_docs_en/create-role.html))." %}
 
     ```sql
     copy users from 's3://my-cloud-solutions-notes-bucket/tickit/allusers_pipe.txt' 
@@ -125,7 +114,7 @@ summary: "В разделе представлена последователь�
 
     {% include image.html file="editor/editor_step_10.jpg" alt="Загрузка файла из S3" caption="" %}
 
-4. Выполните запрос загруженных данных с помощью комманды **SELECT**:
+4. Run queries by using `SELECT` command:
 
     ```sql
     SELECT firstname, lastname, total_quantity 
@@ -139,7 +128,7 @@ summary: "В разделе представлена последователь�
 
     {% include image.html file="editor/editor_step_11.jpg" alt="Запрос загруженных данных" caption="" %}
 
-{% include important.html content="после выполнения всех шагов по развёртыванию хранилища данных в учебных и ознакомительных целях, настоятельно рекомендуется удалить кластер (предварительно сделать слепок данных!) во избежании начисления оплаты по окончании пробного периода." %}
+{% include important.html content="After you have completed tutorials about Data Warehousing on AWS infrustructure, AWS recommends to delete your sample cluster. However, before deleting the clister, make a snapshot of your cluster data (to restore data latter, if you need)." %}
 
 <br />
 [Previous tutorial: Running queries](https://techwritex.ru/aws_docs_en/run-queries.html)

@@ -40,7 +40,7 @@ summary: "This procedure describes how to create IAM role to allow an Amazon Red
 
     {% include image.html file="iam/role/aws_iam_step_9.jpg" alt="Созданная роль в перечне ролей IAM" caption="" %}
 
-9. Choose the new role, then copy and save **Role ARN** (needed in the next tutorial).
+9. Choose the new role, then copy and save **Role ARN** (needed latter).
 
     {% include image.html file="iam/role/aws_iam_step_10.jpg" alt="Код ARN - Amazon Resource Name" caption="" %}
 
