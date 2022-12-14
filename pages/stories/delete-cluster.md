@@ -6,7 +6,7 @@ folder: stories
 summary: "This procedure describes how to create a snapshot and delete the cluster."
 ---
 
-{% include note.html content="Before deleting the cluster, create a snapshot to restore the cluster, if you need. Be aware snapshots accrue storage charges. Delete snapshots when you no longer need them." %}
+{% include note.html content="Before deleting the cluster, create a snapshot to restore the cluster latter, if you need. Be aware snapshots accrue storage charges. Delete snapshots when you no longer need them." %}
 
 1. Sign in to the [Amazon Redshift console](https://console.aws.amazon.com/redshift) (if you leave it after the [previous tutorial](https://techwritex.ru/aws_docs_en/load-data-from-s3.html)):
 
