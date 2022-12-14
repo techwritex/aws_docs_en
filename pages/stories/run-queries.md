@@ -12,7 +12,7 @@ summary: "This procedure describes how to connect to the cluster and querying it
 
     {% include image.html file="editor/editor_step_2.jpg" alt="Запуск редактора запросов" caption="" %}
 
-3. In the **Connect to database** section, enter the connection parameters from the [**Creating cluster**](https://techwritex.ru/aws_docs_en/create-cluster.html) step, then choose **Connect to database**.
+3. In the **Connect to database** section, enter the connection parameters from the step 5 of [**Creating cluster**](https://techwritex.ru/aws_docs_en/create-cluster.html) tutorial, then choose **Connect to database**.
 
     {% include image.html file="editor/editor_step_3.jpg" alt="Соединение с базой данных" caption="" %}
 
@@ -34,7 +34,7 @@ summary: "This procedure describes how to connect to the cluster and querying it
 
 6. Before the next command, choose **Clear**.
 
-7. Put some sample data into the `Cars` table.
+7. Put some sample data into the `Cars` table using `INSERT INTO` command, then choose **Run**.
 
     ```sql
     insert into cars values 
@@ -51,7 +51,7 @@ summary: "This procedure describes how to connect to the cluster and querying it
 
     {% include image.html file="editor/editor_step_7.jpg" alt="Заполнение таблицы" caption="" %}
 
-8. Try an example query.
+8. Try an example query using `SELECT` command.
 
     ```sql
     select * from cars;
