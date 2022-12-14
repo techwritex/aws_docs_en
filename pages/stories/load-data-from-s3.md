@@ -128,7 +128,7 @@ summary: "This procedure describes how to load data to the cluster from Amazon S
 
     {% include image.html file="editor/editor_step_11.jpg" alt="Запрос загруженных данных" caption="" %}
 
-{% include important.html content="After you've completed tutorials about Data Warehousing on AWS infrustructure, AWS recommends to delete your sample cluster. However, before deleting the cluster, make a snapshot of your data (to restore data latter, if you need)." %}
+{% include important.html content="After you've completed tutorials about Data Warehousing on AWS infrustructure, AWS recommends to delete your sample cluster. However, before deleting the cluster, create a snapshot of your data (to restore data latter, if you need)." %}
 
 <br />
 [Previous tutorial: Running queries](https://techwritex.ru/aws_docs_en/run-queries.html)
