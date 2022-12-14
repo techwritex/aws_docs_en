@@ -104,7 +104,7 @@ summary: "This procedure describes how to load data to the cluster from Amazon S
     credentials 'aws_iam_role=<iam-role-arn>' 
     delimiter '|' region '<aws-region>';
     ````
-    {% include note.html content="See `<iam-role-arn\>` in the step 9 of [Creating IAM role tutorial](https://techwritex.ru/aws_docs_en/create-role.html))." %}
+    {% include note.html content="See the value for `<iam-role-arn>` in the step 9 of [Creating IAM role](https://techwritex.ru/aws_docs_en/create-role.html)) tutorial." %}
 
     ```sql
     copy users from 's3://my-cloud-solutions-notes-bucket/tickit/allusers_pipe.txt' 
@@ -128,7 +128,7 @@ summary: "This procedure describes how to load data to the cluster from Amazon S
 
     {% include image.html file="editor/editor_step_11.jpg" alt="Запрос загруженных данных" caption="" %}
 
-{% include important.html content="After you have completed tutorials about Data Warehousing on AWS infrustructure, AWS recommends to delete your sample cluster. However, before deleting the clister, make a snapshot of your cluster data (to restore data latter, if you need)." %}
+{% include important.html content="After you've completed tutorials about Data Warehousing on AWS infrustructure, AWS recommends to delete your sample cluster. However, before deleting the cluster, make a snapshot of your data (to restore data latter, if you need)." %}
 
 <br />
 [Previous tutorial: Running queries](https://techwritex.ru/aws_docs_en/run-queries.html)
